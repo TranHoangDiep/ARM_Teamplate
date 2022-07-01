@@ -1,0 +1,138 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": 
+    {
+      "rootUsername": {
+        "value": ""
+      },
+      "rootPassword": {
+        "value": ""
+      },
+      "KeyVaultName": {
+       "value": ""
+      },
+      "KeyVaultRG": {
+        "value": ""
+      },
+      "osVersion": {
+        "value": ""
+      },
+      "vmName": {
+        "value": ""
+      },
+      "vmSize": {
+        "value": ""
+      },
+      "vmLocation": {
+        "value": ""
+      },
+      "OSDiskType": {
+        "value": "StandardSSD_LRS"
+      },
+      "numberOfDataDisks": {
+        "value": 1
+      },
+      "dataDiskType": {
+        "value": "StandardSSD_LRS"
+      },
+      "dataDiskSize": {
+        "value": 128
+      },
+      "dataDiskHostCaching": {
+        "value": "None"
+      },
+      "existingBootDiagStorageResourceGroup": {
+        "value": ""
+      },
+      "existingBootDiagStorageName": {
+        "value": ""
+      },
+      "existingvNetResourceGroup": {
+       "value": ""
+      },
+      "existingvNetName": {
+        "value": ""
+      },
+      "subnetName": {
+       "value": ""
+      },
+      "publicIPRequired": {
+       "value": ""
+      },
+      "Availability": {
+        "value": ""
+      },
+      "existingAvailabilitySetName": {
+       "value": ""
+      },
+      "Zone": {
+        "value": ""
+      },
+      "application": {
+       "value": ""
+      },
+      "departmentName": {
+       "value": ""
+      },
+      "project": {
+        "value": ""
+      },
+      "workspaceId": {
+        "value": ""
+      },
+      "workspaceKey": {
+        "value": ""
+      },
+      
+      "dxcEPAgent": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/your subscriptionId/resourceGroups/RG of your keyVault /providers/Microsoft.KeyVault/vaults/name of your keyvault"
+          },
+          "secretName": "securityAgent"
+        }
+        },
+    "csCID": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/your subscriptionId/resourceGroups/RG of your keyVault /providers/Microsoft.KeyVault/vaults/name of your keyvault"
+				},
+        "secretName": "csCID"
+			}
+      },
+	   "SymantecCustomerId":  {
+       "reference": {
+        "keyVault": {
+          "id": "/subscriptions/your subscriptionId/resourceGroups/RG of your keyVault /providers/Microsoft.KeyVault/vaults/name of your keyvault"
+				},
+        "secretName": "SymantecCustomerId"
+			}
+      },
+       "SymantecDomainId":  {
+        "reference": {
+        "keyVault": {
+          "id": "/subscriptions/your subscriptionId/resourceGroups/RG of your keyVault /providers/Microsoft.KeyVault/vaults/name of your keyvault"
+			},
+        "secretName": "SymantecDomainId"
+			}
+      },
+        "SymantecCustomerSecretKey":  {
+		    "reference": {
+        "keyVault": {
+          "id": "/subscriptions/your subscriptionId/resourceGroups/RG of your keyVault /providers/Microsoft.KeyVault/vaults/name of your keyvault"
+			},
+        "secretName": "SymantecCustomerSecretKey"
+			}
+      },
+      "existingRecoveryServicesVaultRG": {
+        "value": ""
+      },
+      "existingRecoveryServicesVault": {
+        "value": ""
+      },
+      "existingBackupPolicy": {
+       "value": "DefaultPolicy"
+      } 
+    }
+}
